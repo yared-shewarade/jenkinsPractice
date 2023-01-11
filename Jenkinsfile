@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        imagename = "yared-shewarade/jenkinsPractice"
+        imagename = "yared-shewarade/jenkinspractice"
         registryCredential = "yared-shewarade"
         dockerimage = ''
     }
@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Cloning Git') {
             steps {
-                git([url: 'https://github.com/yared-shewarade/jenkinsPractice.git', branch:'main', credentialsId: 'yared-shewarade'])
+                git([url: 'https://github.com/yared-shewarade/jenkinspractice.git', branch:'main', credentialsId: 'yared-shewarade'])
             }
         }
         stage('Building image') {
