@@ -11,7 +11,7 @@ pipeline {
                 git([url: 'https://github.com/yared-shewarade/jenkinsPractice.git', branch:'main', credentialsId: 'yared-shewarade'])
             }
         }
-        stages('Building image') {
+        stage('Building image') {
             steps{
                 script {
                     dockerImage = docker.build imagename
