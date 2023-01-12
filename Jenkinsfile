@@ -1,7 +1,7 @@
 pipeline {
     environment {
-        imagename = "yared-shewarade/jenkinspractice"
-        registryCredential = "jenkins_ssh_key"
+        imagename = "yarlov21/jenkinspractice"
+        registryCredential = "jenkins_docker"
         dockerimage = ''
     }
     agent any
